@@ -13,14 +13,14 @@ class CreateShoppingInstructionTable extends Migration
      */
     public function up()
     {
-        Schema::create('shipping_instruction', function (Blueprint $table) {
+        Schema::create('shipping_instructions', function (Blueprint $table) {
             $table->id();
             $table->string('exporter', 255);
             $table->string('att', 255);
-            $table->unsignedBigInteger('import_id');
+            $table->unsignedBigInteger('imports_id');
             $table->string('volumes', 255);
             $table->string('ship', 255);
-            $table->unsignedBigInteger('harbor_id');
+            $table->unsignedBigInteger('harbors_id');
             $table->date('data');
             $table->longText('invoices')->nullable();
             $table->decimal('thc', 8, 2)->nullable();
@@ -34,14 +34,14 @@ class CreateShoppingInstructionTable extends Migration
             $table->string('discount_installment', 255)->nullable();
             $table->string('ship_transfer', 255)->nullable();
             $table->string('installment_loan', 255)->nullable();
-            $table->unsignedBigInteger('bank_id');
+            $table->unsignedBigInteger('banks_id');
             $table->string('enterprise_name', 255)->nullable();
             $table->integer('enterprise_cnpj')->nullable();
             $table->timestamps();
 
-            $table->foreign('import_id')->references('id')->on('import')->onDelete('cascade');
-            $table->foreign('harbor_id')->references('id')->on('harbor')->onDelete('cascade');
-            $table->foreign('bank_id')->references('id')->on('bank')->onDelete('cascade');
+            $table->foreign('imports_id')->references('id')->on('imports')->onDelete('cascade');
+            $table->foreign('harbors_id')->references('id')->on('harbors')->onDelete('cascade');
+            $table->foreign('banks_id')->references('id')->on('banks')->onDelete('cascade');
         });
     }
 
@@ -52,6 +52,6 @@ class CreateShoppingInstructionTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('shipping_instruction');
+        Schema::dropIfExists('shipping_instructions');
     }
 }

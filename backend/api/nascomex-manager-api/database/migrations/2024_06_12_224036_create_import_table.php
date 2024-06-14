@@ -13,7 +13,7 @@ class CreateImportTable extends Migration
      */
     public function up()
     {
-        Schema::create('import', function (Blueprint $table) {
+        Schema::create('imports', function (Blueprint $table) {
             $table->id();
             $table->string('nome', 255);
             $table->string('status', 255);
@@ -28,6 +28,6 @@ class CreateImportTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('import');
+        Schema::dropIfExists('imports');
     }
 }

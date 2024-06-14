@@ -13,7 +13,7 @@ class CreateHarborTable extends Migration
      */
     public function up()
     {
-        Schema::create('harbor', function (Blueprint $table) {
+        Schema::create('harbors', function (Blueprint $table) {
             $table->id();
             $table->string('name', 255);
             $table->string('state', 255);
@@ -28,6 +28,6 @@ class CreateHarborTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('harbor');
+        Schema::dropIfExists('harbors');
     }
 }
