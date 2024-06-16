@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\BankController;
+use App\Http\Controllers\HarborController;
+use App\Http\Controllers\ImportController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,12 +17,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Rotas API banco
 Route::get('bank', [BankController::class, 'index']);
 Route::get('bank/{id}', [BankController::class, 'show']);
 Route::post('bank', [BankController::class, 'create']);
 Route::put('bank/{id}', [BankController::class, 'update']);
 Route::delete('bank/{id}', [BankController::class, 'destroy']);
 
+
+//Rotas API porto
+Route::get('harbor', [HarborController::class, 'index']);
+Route::get('harbor/{id}', [HarborController::class, 'show']);
+Route::post('harbor', [HarborController::class, 'create']);
+Route::put('harbor/{id}', [HarborController::class, 'update']);
+Route::delete('harbor/{id}', [HarborController::class, 'destroy']);
+
+//Rotas API importador
+Route::get('import', [ImportController::class, 'index']);
+Route::get('import/{id}', [ImportController::class, 'show']);
+Route::post('import', [ImportController::class, 'create']);
+Route::put('import/{id}', [ImportController::class, 'update']);
+Route::delete('import/{id}', [ImportController::class, 'destroy']);
 
 
 
