@@ -3,6 +3,7 @@
 use App\Http\Controllers\BankController;
 use App\Http\Controllers\HarborController;
 use App\Http\Controllers\ImportController;
+use App\Http\Controllers\ShippingInstructionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -39,23 +40,11 @@ Route::post('import', [ImportController::class, 'create']);
 Route::put('import/{id}', [ImportController::class, 'update']);
 Route::delete('import/{id}', [ImportController::class, 'destroy']);
 
+//Rotas API numerário
+Route::get('shipping-instruction', [ShippingInstructionController::class, 'index']);
+Route::get('shipping-instruction/{id}', [ShippingInstructionController::class, 'show']);
+Route::post('shipping-instruction', [ShippingInstructionController::class, 'create']);
+Route::put('shipping-instruction/{id}', [ShippingInstructionController::class, 'update']);
+Route::delete('shipping-instruction/{id}', [ShippingInstructionController::class, 'destroy']);
 
-
-
-//usar como referência
-
-// Route::post('/users/{id}/comments', [CommentController::class, 'store'])->name('comments.store');
-// Route::get('/users/{id}/comments/create', [CommentController::class, 'create'])->name('comments.create');
-// Route::get('/users/{id}/comments', [CommentController::class, 'index'])->name('comments.index');
-// Route::get('/users/{id}/comments/{id_comments}/edit', [CommentController::class, 'edit'])->name('comments.edit');
-// Route::put('comments/{id}', [CommentController::class, 'update'])->name('comments.update');
-
-// //editar parcialmente um registro patch, editar todo o registro put
-// Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('users.destroy');
-// Route::put('/users/{id}', [UserController::class, 'update'])->name('users.update');   
-// Route::get('/users/{id}/edit', [UserController::class, 'edit'])->name('users.edit');   
-// Route::get('/users', [UserController::class, 'index'])->name('users.index');   
-// Route::get('/users/create', [UserController::class, 'create'])->name('users.create');
-// Route::post('/users', [UserController::class, 'store'])->name('users.store');
-// Route::get('/users/{id}', [UserController::class, 'show'])->name('users.show');   
 
