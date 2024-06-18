@@ -3,6 +3,7 @@
 use App\Http\Controllers\BankController;
 use App\Http\Controllers\HarborController;
 use App\Http\Controllers\ImportController;
+use App\Http\Controllers\ShippingInstructionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -38,6 +39,13 @@ Route::get('import/{id}', [ImportController::class, 'show']);
 Route::post('import', [ImportController::class, 'create']);
 Route::put('import/{id}', [ImportController::class, 'update']);
 Route::delete('import/{id}', [ImportController::class, 'destroy']);
+
+//Rotas API numerário
+Route::get('shipping-instruction', [ShippingInstructionController::class, 'index']);
+Route::get('shipping-instruction/{id}', [ShippingInstructionController::class, 'show']);
+Route::post('shipping-instruction', [ShippingInstructionController::class, 'create']);
+Route::put('shipping-instruction/{id}', [ShippingInstructionController::class, 'update']);
+Route::delete('shipping-instruction/{id}', [ShippingInstructionController::class, 'destroy']);
 
 
 
