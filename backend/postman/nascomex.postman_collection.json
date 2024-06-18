@@ -1,0 +1,514 @@
+{
+	"info": {
+		"_postman_id": "ed221212-c5e2-439a-b715-2f904cd4e4fb",
+		"name": "nascomex",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33936035"
+	},
+	"item": [
+		{
+			"name": "Banks",
+			"item": [
+				{
+					"name": "Buscar bancos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8989/api/bank",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"bank"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar bancos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bank\": \"Marcel - teste\",\n    \"agency\": \"9202\",\n    \"number\": 105,\n    \"name\": \"Nubank\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8989/api/bank",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"bank"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar bancos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8989/api/bank/111",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"bank",
+								"111"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar banco único",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8989/api/bank/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"bank",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar banco",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bank\": \"Nubank\",\n    \"agency\": \"1121\",\n    \"number\": 5362,\n    \"name\": \"Marcel Leite de Farias\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8989/api/bank/922",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"bank",
+								"922"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Harbors",
+			"item": [
+				{
+					"name": "Buscar portos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8989/api/harbor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"harbor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar portos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Porto - Marcel\",\n    \"state\": \"Santa Catarina\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8989/api/harbor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"harbor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar portos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8989/api/harbor/101",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"harbor",
+								"101"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar porto único",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8989/api/harbor/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"harbor",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar portos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Porto - Marcel\",\n    \"state\": \"Santa Catarina\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8989/api/harbor/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"harbor",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Imports",
+			"item": [
+				{
+					"name": "Buscar importadores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8989/api/import",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"import"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar importador",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Vitória Muniz Fiorelli\",\n    \"status\": \"Ativo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8989/api/import",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"import"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar importador",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8989/api/import/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"import",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar importador único",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8989/api/import/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"import",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar portos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Vitória Muniz Fiorelli\",\n    \"status\": \"Ativo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8989/api/import/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"import",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ShippingInstructions",
+			"item": [
+				{
+					"name": "Buscar numerários",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8989/api/shipping-instruction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"shipping-instruction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar numerário",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"exporter\": \"Example Exporter\",\n    \"att\": \"John Doe\",\n    \"imports_id\": 1,\n    \"volumes\": \"100\",\n    \"ship\": \"SS Example\",\n    \"harbors_id\": 2,\n    \"data\": \"2023-06-15\",\n    \"invoices\": \"Invoice details here\",\n    \"thc\": 150.50,\n    \"BL\": \"BL123456789\",\n    \"office_fee\": 200.75,\n    \"doc_bank\": 100.00,\n    \"sda\": \"SDA123\",\n    \"origem\": \"Port of Origin\",\n    \"divergence\": \"No divergence\",\n    \"transport_docs\": \"Transport documents here\",\n    \"discount_installment\": \"5%\",\n    \"ship_transfer\": \"Transfer details here\",\n    \"installment_loan\": \"Loan details here\",\n    \"banks_id\": 3,\n    \"enterprise_name\": \"Example Enterprise\",\n    \"enterprise_cnpj\": 12345678901234\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8989/api/shipping-instruction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"shipping-instruction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar numerário",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8989/api/shipping-instruction/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"shipping-instruction",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar numerário único",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8989/api/shipping-instruction/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"shipping-instruction",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar numerário",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"exporter\": \"Marcel\",\n    \"att\": \"Marcel\",\n    \"imports_id\": 1,\n    \"volumes\": \"100\",\n    \"ship\": \"Marcel\",\n    \"harbors_id\": 2,\n    \"data\": \"2023-06-15\",\n    \"invoices\": \"Invoice details here - Marcel\",\n    \"thc\": 150.50,\n    \"BL\": \"BL123456789 - Marcel\",\n    \"office_fee\": 220.75,\n    \"doc_bank\": 120.00,\n    \"sda\": \"SDA12  Marcel\",\n    \"origem\": \"Port of Origin - Marcel\",\n    \"divergence\": \"No divergence - Marcel\",\n    \"transport_docs\": \"Transport documents here - Marcel\",\n    \"discount_installment\": \"5% - Marcel\",\n    \"ship_transfer\": \"Transfer details here - Marcel\",\n    \"installment_loan\": \"Loan details here - Marcel\",\n    \"banks_id\": 4,\n    \"enterprise_name\": \"Example Enterprise - Marcel\",\n    \"enterprise_cnpj\": 23456789012345\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8989/api/shipping-instruction/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"shipping-instruction",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
