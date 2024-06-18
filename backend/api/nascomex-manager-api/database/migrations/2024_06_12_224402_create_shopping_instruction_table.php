@@ -36,7 +36,7 @@ class CreateShoppingInstructionTable extends Migration
             $table->string('installment_loan', 255)->nullable();
             $table->unsignedBigInteger('banks_id');
             $table->string('enterprise_name', 255)->nullable();
-            $table->integer('enterprise_cnpj')->nullable();
+            $table->unsignedBigInteger('enterprise_cnpj')->nullable();
             $table->timestamps();
 
             $table->foreign('imports_id')->references('id')->on('imports')->onDelete('cascade');
