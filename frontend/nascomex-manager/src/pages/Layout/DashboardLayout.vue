@@ -15,6 +15,10 @@
         <md-icon>content_paste</md-icon>
         <p>Table list</p>
       </sidebar-link>
+      <sidebar-link to="/shipping">
+        <md-icon>sailing</md-icon>
+        <p>Numerário</p>
+      </sidebar-link>
       <sidebar-link to="/harbor">
         <md-icon>sailing</md-icon>
         <p>Portos</p>

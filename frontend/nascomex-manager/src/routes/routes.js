@@ -1,7 +1,8 @@
 import DashboardLayout from "@/pages/Layout/DashboardLayout.vue";
 
 import Dashboard from "@/pages/Dashboard.vue";
-import UserProfile from "@/pages/UserProfile.vue"; 
+import UserProfile from "@/pages/UserProfile.vue";
+import Shipping from  "@/pages/ShippingInstruction.vue";
 import Bank from "@/pages/Bank.vue"; 
 import Harbor from "@/pages/Harbor.vue"; 
 import Import from "@/pages/Import.vue"; 
@@ -27,6 +28,11 @@ const routes = [
         path: "user",
         name: "User Profile",
         component: UserProfile,
+      },
+      {
+        path: "shipping",
+        name: "Numerário",
+        component: Shipping,
       },
       {
         path: "harbor",
