@@ -69,7 +69,7 @@ class HarborController extends Controller
             $harbor = Harbor::findOrFail($id);
 
             // Verificar se existe alguma shipping instruction relacionada
-            if (ShippingInstruction::where('banks_id', $id)->exists()) {
+            if (ShippingInstruction::where('harbors_id', $id)->exists()) {
                 return response()->json([
                     'message' => 'Não foi possível deletar este Porto, pois ele está referenciado em instruções de envio.',
                     'code' => 400

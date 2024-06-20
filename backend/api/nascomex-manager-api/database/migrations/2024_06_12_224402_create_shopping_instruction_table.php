@@ -26,6 +26,7 @@ class CreateShoppingInstructionTable extends Migration
             $table->decimal('thc', 8, 2)->nullable();
             $table->string('BL', 255)->nullable();
             $table->decimal('office_fee', 8, 2)->nullable();
+            $table->decimal('clearance', 8, 2)->nullable();
             $table->decimal('doc_bank', 8, 2)->nullable();
             $table->string('sda', 255)->nullable();
             $table->string('origem', 255)->nullable();

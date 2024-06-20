@@ -69,7 +69,7 @@ class ImportController extends Controller
             $import = Import::findOrFail($id);
 
             // Verificar se existe alguma shipping instruction relacionada
-            if (ShippingInstruction::where('banks_id', $id)->exists()) {
+            if (ShippingInstruction::where('imports_id', $id)->exists()) {
                 return response()->json([
                     'message' => 'Não foi possível deletar este Importador, pois ele está referenciado em instruções de envio.',
                     'code' => 400
