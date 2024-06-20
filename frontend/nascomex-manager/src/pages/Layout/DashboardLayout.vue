@@ -16,7 +16,7 @@
         <p>Table list</p>
       </sidebar-link>
       <sidebar-link to="/shipping">
-        <md-icon>sailing</md-icon>
+        <md-icon>content_paste</md-icon>
         <p>Numerário</p>
       </sidebar-link>
       <sidebar-link to="/harbor">

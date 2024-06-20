@@ -25,6 +25,7 @@ import routes from "./routes/routes";
 import GlobalComponents from "./globalComponents";
 import GlobalDirectives from "./globalDirectives";
 import Notifications from "./components/NotificationPlugin";
+import { MdField } from 'vue-material/dist/components'
 
 // MaterialDashboard plugin
 import MaterialDashboard from "./material-dashboard";
@@ -44,6 +45,25 @@ Vue.use(MaterialDashboard);
 Vue.use(GlobalComponents);
 Vue.use(GlobalDirectives);
 Vue.use(Notifications);
+
+Vue.use(MdField)
+
+Vue.component('MdSelect', Vue.options.components.MdSelect.extend({
+    methods: {
+        isInvalidValue: function isInvalidValue () {
+            return this.$el.validity ? this.$el.validity.badInput : this.$el.querySelector('input').validity.badInput
+        }
+    }
+}))
+
+Vue.config.errorHandler = (err, vm, info) => {
+  if (process.env.NODE_ENV !== 'production') {
+    // Show any error but this one
+    if (err.message !== "Cannot read property 'badInput' of undefined") {
+      console.error(err);
+    }
+  }
+};
 
 /* eslint-disable no-new */
 new Vue({
