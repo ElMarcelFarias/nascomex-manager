@@ -53,9 +53,7 @@
             </md-field>
           </div>
           <div class="md-layout-item md-small-size-100 md-size-50">
-            <md-field>
-              <md-input v-model="data" type="date"></md-input>
-            </md-field>
+            <md-datepicker v-model="data" />
           </div>
           <div class="md-layout-item md-small-size-100 md-size-100">
             <md-field>
