@@ -20,7 +20,7 @@ const model = ref([
             {
                 label: 'Importador',
                 icon: 'pi pi-fw pi-user',
-                to: '/pages/harbor'
+                to: '/pages/import'
             },
             {
                 label: 'Bancos',

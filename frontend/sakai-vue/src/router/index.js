@@ -142,6 +142,11 @@ const router = createRouter({
                     component: () => import('@/views/pages/Bank.vue')
                 },
                 {
+                    path: '/pages/import',
+                    name: 'import',
+                    component: () => import('@/views/pages/Import.vue')
+                },
+                {
                     path: '/documentation',
                     name: 'documentation',
                     component: () => import('@/views/utilities/Documentation.vue')
