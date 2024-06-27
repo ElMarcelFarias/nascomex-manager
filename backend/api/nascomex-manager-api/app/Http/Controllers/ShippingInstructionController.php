@@ -25,7 +25,6 @@ class ShippingInstructionController extends Controller
                                                             'harbors.name as harbor_name', 
                                                         )
                                                         ->get();
-            dd($shippingInstructions);
 
             return response()->json([
                 'shippingInstructions' => $shippingInstructions,
