@@ -10,7 +10,7 @@ const model = ref([
             { 
                 label: 'Numerário', 
                 icon: 'pi pi-fw pi-file', 
-                to: '/' 
+                to: '/pages/shippingInstruction' 
             },
             {
                 label: 'Portos',

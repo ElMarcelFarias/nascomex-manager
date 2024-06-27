@@ -137,6 +137,11 @@ const router = createRouter({
                     component: () => import('@/views/pages/Harbor.vue')
                 },
                 {
+                    path: '/pages/shippingInstruction',
+                    name: 'shippingInstruction',
+                    component: () => import('@/views/pages/ShippingInstruction.vue')
+                },
+                {
                     path: '/pages/bank',
                     name: 'bank',
                     component: () => import('@/views/pages/Bank.vue')
