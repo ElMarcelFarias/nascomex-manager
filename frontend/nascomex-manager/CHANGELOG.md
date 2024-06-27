@@ -1,81 +1,46 @@
-# Change Log
+# Changelog
 
-## [1.5.2] 2024-02-22
+## 3.10.0 (2024-03-11)
 
-- Update dependencies and devDependencies.
-- Fix installation issues.
+**Migration Guide**
 
-## [1.5.1] 2023-01-10
+-   Update theme files.
 
-- Update dependencies and devDependencies.
-- Fix issue when running `npm install`.
+**Implemented New Features and Enhancements**
 
-## [1.5.0] 2022-03-18
+-   Upgrade to PrimeVue 3.49.1
 
-### Dependencies Updates
+## 3.9.0 (2023-11-01)
 
-- Updated all out of date dependencies from `package.json` file
+**Migration Guide**
 
-## [1.4.0] 2020-03-12
+-   Update theme files.
 
-### Dependencies Updates
+**Implemented New Features and Enhancements**
 
-- Updated all out of date dependencies from `package.json` file
-- Add `API_KEY` file
-- Add new structure for google maps plugin
+-   Upgrade to PrimeVue 3.39.0
 
-## [1.3.2] 2019-12-13
+## 3.8.0 (2023-07-24)
 
-### Dependencies Updates
+**Migration Guide**
 
-- Updated all out of date dependencies from `package.json` file
-- The version is now `v1.3.2` to have the same versioning line with the PRO version of this product
+-   Update theme files.
+-   Update assets style files
+-   Remove code highlight
 
-## [1.2.1] 2019-06-14
+**Implemented New Features and Enhancements**
 
-### Dependencies Updates, Vue Material Update
+-   Upgrade to PrimeVue 3.30.2
 
-- Updated all out of date dependencies from `package.json` file
-- The framework `Vuematerial.io` was updated to the latest beta version `1.0.0-beta-11`
+## 3.7.0 (2023-05-06)
 
-## [1.2.0] 2019-04-30
+-   Upgrade to PrimeVue 3.28.0
 
-### Dependencies Updates
+**Implemented New Features and Enhancements**
 
-- Updated all out of date dependencies from `package.json` file
+## 3.6.0 (2023-04-12)
 
-## [1.1.0] 2019-02-08
+**Implemented New Features and Enhancements**
 
-### Dependencies Updates, Improvements
-
-- Updated all out of date dependencies from `package.json` file
-- Removed all `to=""` and replaced with `href=""` props from non router-link components for avoid this error `[Vue warn]: Error in render: "TypeError: Cannot read property 'options' of undefined"`
-- Changed links from footer
-
-## [1.0.3] 2018-11-26
-
-### Bug Fixing
-
-- Fixed error `[Vue warn]: Error in render: "TypeError: Cannot read property 'options' of undefined"`
-
-## [1.0.2] 2018-11-19
-
-### Plugin Updates, BugFixing
-
-- Updated all `dependencies` and `devDependencies` to the latest versions
-- Cleaned `package.json` file
-- Removed all lint warnings and errors
-- Github issues fixed
-- Other bug fixes
-
-## [1.0.1] 2018-07-13
-
-### BugFixing and Updates
-
-- updated all the npm packages
-- scroll issue on mobile devices fixed
-- another small bug fixes
-
-## [1.0.0] 2018-05-03
-
-- Initial Release
+-   Upgrade to PrimeVue 3.26.1
+-   Upgrade to vite 4.2.1
