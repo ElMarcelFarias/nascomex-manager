@@ -195,3 +195,15 @@ php artisan key:generate
 
 Acesse o projeto
 http://localhost:8989
+
+# Setup Nascomex - Manager (Front-end prod)
+
+Instale as dependências do projeto
+```sh
+npm install
+```
+
+Iniciar o Front-end
+```sh
+npm run build
+```
