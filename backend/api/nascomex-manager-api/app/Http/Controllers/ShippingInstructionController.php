@@ -12,7 +12,20 @@ class ShippingInstructionController extends Controller
     public function index() 
     {
         try {
-            $shippingInstructions = ShippingInstruction::all();
+            $shippingInstructions = ShippingInstruction::join('banks', 'shipping_instructions.banks_id', '=', 'banks.id')
+                                                        ->join('imports', 'shipping_instructions.imports_id', '=', 'imports.id')
+                                                        ->join('harbors', 'shipping_instructions.harbors_id', '=', 'harbors.id')
+                                                        ->select(
+                                                            'shipping_instructions.*', 
+                                                            'banks.bank', 
+                                                            'banks.agency', 
+                                                            'banks.number',
+                                                            'banks.name as bank_name', 
+                                                            'imports.nome as import_name',  
+                                                            'harbors.name as harbor_name', 
+                                                        )
+                                                        ->get();
+            dd($shippingInstructions);
 
             return response()->json([
                 'shippingInstructions' => $shippingInstructions,
